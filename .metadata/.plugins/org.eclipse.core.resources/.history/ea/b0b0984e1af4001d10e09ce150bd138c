@@ -1,0 +1,140 @@
+package week04BEassignment;
+
+public class week04assignment {
+
+	public static void main(String[] args) {
+	
+		/*Question 1*/
+		
+		int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+	 
+		/*Question 1a*/
+		
+		System.out.println(ages[ages.length -1] - ages[0]);
+		
+		/*Question 1b*/
+		
+		int[] ages2 = {3, 9, 23, 64, 2, 8, 28, 93, 44};
+		System.out.println(ages2[ages2.length -1] - ages2[0]);
+		
+		/*Question 1c*/
+			
+		double sum = 0;
+		for (int age : ages2) {
+			sum += age;
+		}
+		System.out.println(sum/ages2.length);
+		
+		/*Question 2*/
+		
+		String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
+		
+		/*Question 2a*/
+		
+		double nameSum = 0;
+		for (String name : names) {
+			nameSum += name.length();
+		}
+		System.out.println(nameSum/names.length);
+		
+		/*Question 2b*/
+		
+		String nameString = "";
+		for (String name : names) {
+			nameString += (name + " ");
+		}
+		System.out.println(nameString);
+		
+		/*Question 3*/
+		
+		/*You access the last element of an array by using array[array.length - 1] */
+		
+		/*Question 4*/
+		
+		/*You access the first element of an array using array[0] */
+		
+		/*Question 5*/
+		
+		int[] nameLengths = new int[names.length];
+		for (int i = 0; i<names.length; i++) {
+			nameLengths[i] = names[i].length();
+			System.out.println(nameLengths[i]);
+		}
+		// Can you not print out an array? I tried to System.out.println(nameLengths); after my loop and got
+		//this weird output [I@5b480cf9
+		
+		/*Question 6*/
+		
+		int newSum = 0;
+		for (int length : nameLengths) {
+			newSum += length;
+		}
+		System.out.println(newSum);
+		
+		/*Question 7*/
+		
+		System.out.println(multiplyWord("tacocat", 4));
+		
+		/*Question 8*/
+		
+		System.out.println(fullName("Sable", "Abel"));
+		
+		/*Question 9*/
+		
+		System.out.println(checkSum(ages));
+		int[] intArr = {1, 2, 3, 4, 5};
+		System.out.println(checkSum(intArr));
+		
+		/*Question 10*/
+		
+		double[] nums = {2.25, 4.10, 5.99, 0.36, 37.03}
+		System.out.println(findAverage(nums));
+		
+	}
+	
+	/*Question 7 Method*/
+	
+	public static String multiplyWord(String word, int n) {
+		StringBuilder longWord = new StringBuilder();
+		for (int i = 0; i < n; i++) {
+			longWord.append(word);			
+		}return longWord.toString();
+	}
+		
+	
+	/*Question 8 Method*/	
+	
+	public static String fullName(String firstName, String lastName) {
+		StringBuilder name = new StringBuilder();
+		name.append(firstName);
+		name.append(" ");
+		name.append(lastName);
+		return name.toString();
+	} 
+	
+	/*Question 9 Method*/
+	
+	public static Boolean checkSum(int[] arr) {
+		int arrSum = 0;
+		for (int a : arr) {
+			arrSum += a;
+		}
+		if (arrSum > 100) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	/*Question 10 Method*/
+	
+	public static double findAverage(double[] arr) {
+		double sum = 0;
+		for (double a : arr) {
+			sum += a;
+		} return sum/arr.length;
+			
+	}
+	
+	
+}

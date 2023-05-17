@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\acino\Promineo\Promineo_Tech_BE\Week-04-Collections\week04BEassignments\.metadata\.plugins\org.eclipse.jdt.core
+3494570763.index
+1865797976.index
+3413725848.index

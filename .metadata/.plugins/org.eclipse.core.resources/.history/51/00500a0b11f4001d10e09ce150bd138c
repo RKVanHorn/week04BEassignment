@@ -1,0 +1,17 @@
+package week04BEassignment;
+
+public class week04assignment {
+
+	public static void main(String[] args) {
+	
+		/*Question 1*/
+		
+		int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+	 
+		/*Question 1a*/
+		
+		System.out.println(ages[ages.length -1] - ages[0]);
+
+	}
+		
+}
